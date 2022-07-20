@@ -138,8 +138,9 @@ table {
 
 /* colors */
 :root {
-    --main-bg-color: #fafafa;
+    --body-bg-color: #fafafa;
     --sidebar-bg-color: #e9d5ff;
+    --main-bg-color: #faf5ff;
 }
 
 
@@ -147,11 +148,10 @@ table {
 
 * {
     box-sizing: border-box;
-    border: 1px solid gray;
 }
 
 body {
-    background-color: white;
+    background-color: var(--body-bg-color);
 }
 
 .container {
@@ -229,8 +229,7 @@ section {
 /*  Header */
 
 header {
-    /* delete border */
-    border: 1px solid gray;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,8 +252,14 @@ header {
 }
 
 /* main */
+
+main {
+    background-color: var(--main-bg-color);
+}
+
 .contents-container {
     /* Center the container  */
+
     margin: 10px;
     height: 90%;
     display: grid;
