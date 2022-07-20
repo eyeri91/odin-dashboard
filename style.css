@@ -156,10 +156,21 @@ table {
         "sidebar main";
 }
 
-/* Sidebar */
+
 section .sidebar {
     grid-area: sidebar;
 }
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+/* Sidebar */
+
 
 .side-container {
     border: 1px solid brown;
@@ -176,12 +187,13 @@ section .sidebar {
         "."
         "settings"
         "login";
-    /* grid-template: 1fr 3fr 3fr 1fr / auto; */
+
 }
 
 .side-container>* {
     border: 1px solid brown;
 }
+
 
 .logo {
     grid-area: logo;
@@ -199,12 +211,28 @@ section .sidebar {
     grid-area: login;
 }
 
+/*  Header */
+
 header {
     /* delete border */
     border: 1px solid gray;
-    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-main {
-    grid-area: main;
+.head-container {
+    border: 1px solid brown;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
 }
+
+.icons {
+    border: 1px solid brown;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* main */
