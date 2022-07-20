@@ -144,6 +144,7 @@ table {
 
 
 .container {
+    /* delete border */
     border: 1px solid gray;
     background-color: aquamarine;
     margin: 20px;
@@ -155,11 +156,52 @@ table {
         "sidebar main";
 }
 
+/* Sidebar */
 section .sidebar {
     grid-area: sidebar;
 }
 
+.side-container {
+    border: 1px solid brown;
+    background-color: pink;
+
+
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 3fr 1fr 3fr 1fr;
+    grid-template-areas:
+        "logo"
+        "menu"
+        "."
+        "settings"
+        "login";
+    /* grid-template: 1fr 3fr 3fr 1fr / auto; */
+}
+
+.side-container>* {
+    border: 1px solid brown;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.settings {
+    grid-area: settings;
+}
+
+.login {
+    grid-area: login;
+}
+
 header {
+    /* delete border */
+    border: 1px solid gray;
     grid-area: header;
 }
 
