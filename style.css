@@ -190,11 +190,12 @@ main {
 section {
     background-color: var(--accent-color);
     color: var(--bright-text);
+    font-size: 1.3rem;
 }
 
 
 .side-container {
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
 
     height: 90vh;
     margin: 20px;
@@ -211,10 +212,10 @@ section {
     /* gap: 1rem; */
 }
 
-.side-container>* {
-    border: 1px solid brown;
+.menu-list>li,
+.settings-list>li {
+    margin-bottom: 10px;
 }
-
 
 .logo {
     grid-area: logo;
