@@ -144,6 +144,7 @@ table {
     --main-bg-color: #faf5ff;
 
     --bright-text: #faf5ff;
+    --heading-text: #4c1d95;
     --shadow: 0 6px 10px -4px rgba(199, 183, 199, 0.7);
 
 }
@@ -201,7 +202,7 @@ section {
     margin: 20px;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-template-rows: 2fr 3fr 3fr 1fr;
     grid-template-areas:
         "logo"
         "menu"
@@ -219,6 +220,7 @@ section {
 
 .logo {
     grid-area: logo;
+    font-size: 1.8rem;
 }
 
 .menu {
@@ -252,6 +254,7 @@ header {
 }
 
 .search-bar {
+    color: var(--bright-text);
     width: 80%;
     margin-left: 20px;
     border-radius: 10px;
@@ -260,7 +263,7 @@ header {
 }
 
 .head-icons {
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
 
     display: flex;
     justify-content: space-between;
@@ -273,16 +276,17 @@ main {
 }
 
 .contents-container {
-    /* Center the container  */
-    margin: 10px;
+    margin: 15px;
     height: 90%;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
 }
 
-.contents-container>* {
-    border: 1px solid brown;
+.contents-container h2 {
+    font-size: 1.5rem;
+    color: var(--heading-text);
+    margin-bottom: 10px;
 }
 
 .projects {
@@ -290,7 +294,6 @@ main {
 }
 
 .project {
-    border: 1px solid brown;
     display: grid;
     /* resize: both; */
     overflow: auto;
@@ -299,10 +302,9 @@ main {
     gap: 20px;
 }
 
-/* .item-1 {
-    /* background-size: cover; */
-/* background-image: url(/odin-dashboard/images/projects/Subscribe-Desktop.png); */
-/* } */
+.item {
+    border: 1px solid var(--accent-color);
+}
 
 .information {
     overflow: auto;
