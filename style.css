@@ -139,8 +139,11 @@ table {
 /* colors */
 :root {
     --body-bg-color: #fafafa;
-    --accent-color: #e9d5ff;
+    --accent-color: #c084fc;
+    --search-color: #e9d5ff;
     --main-bg-color: #faf5ff;
+
+    --bright-text: #faf5ff;
     --shadow: 0 6px 10px -4px rgba(199, 183, 199, 0.7);
 
 }
@@ -186,6 +189,7 @@ main {
 
 section {
     background-color: var(--accent-color);
+    color: var(--bright-text);
 }
 
 
@@ -251,7 +255,7 @@ header {
     margin-left: 20px;
     border-radius: 10px;
     padding: 5px 10px;
-    background-color: var(--accent-color);
+    background-color: var(--search-color);
 }
 
 .head-icons {
