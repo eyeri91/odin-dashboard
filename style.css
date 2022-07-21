@@ -139,9 +139,10 @@ table {
 /* colors */
 :root {
     --body-bg-color: #fafafa;
-    --sidebar-bg-color: #e9d5ff;
+    --accent-color: #e9d5ff;
     --main-bg-color: #faf5ff;
-    --search-bar: #e9d5ff;
+    --shadow: 0 6px 10px -4px rgba(199, 183, 199, 0.7);
+
 }
 
 
@@ -162,7 +163,7 @@ body {
     /* background-color: aquamarine; */
     display: grid;
     grid-template-columns: 2fr 9fr;
-    grid-template-rows: 100px auto;
+    grid-template-rows: 120px auto;
     grid-template-areas:
         "sidebar header"
         "sidebar main";
@@ -184,7 +185,7 @@ main {
 /* Sidebar */
 
 section {
-    background-color: var(--sidebar-bg-color);
+    background-color: var(--accent-color);
 }
 
 
@@ -230,10 +231,12 @@ section {
 /*  Header */
 
 header {
-
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
+    box-shadow: var(--shadow);
 }
 
 .head-container {
@@ -248,7 +251,7 @@ header {
     margin-left: 20px;
     border-radius: 10px;
     padding: 5px 10px;
-    background-color: var(--search-bar);
+    background-color: var(--accent-color);
 }
 
 .head-icons {
@@ -266,7 +269,6 @@ main {
 
 .contents-container {
     /* Center the container  */
-
     margin: 10px;
     height: 90%;
     display: grid;
