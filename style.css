@@ -302,11 +302,18 @@ main {
     gap: 20px;
 }
 
-.item {
+.item,
+.trend,
+.announcement {
     border: 1px solid var(--accent-color);
 }
 
-.information {
+.trend,
+.announcement {
+    height: auto;
+}
+
+.info {
     overflow: auto;
     display: grid;
     grid-template-rows: 1fr 1fr;
