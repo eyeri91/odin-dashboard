@@ -223,6 +223,10 @@ section {
 .logo {
     grid-area: logo;
     font-size: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .menu {
@@ -236,6 +240,7 @@ section {
 .login {
     grid-area: login;
 }
+
 
 /*  Header */
 
