@@ -144,7 +144,7 @@ table {
     --main-bg-color: #faf5ff;
 
     --bright-text: #faf5ff;
-    --heading-text: #4c1d95;
+    --heading-text: #5a3297;
     --shadow: 0 6px 10px -4px rgba(199, 183, 199, 0.7);
     --main-font: 'Roboto', sans-serif;
 
@@ -256,6 +256,7 @@ header {
     position: relative;
     z-index: 1;
     box-shadow: var(--shadow);
+    color: var(--heading-text);
 }
 
 .head-container {
@@ -289,15 +290,15 @@ header {
     /* border: 1px solid brown; */
     display: flex;
     justify-content: end;
-    margin-right: 10px;
+    align-items: center;
 }
 
 .head-icons>* {
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
-.head-icons :nth-child(1) {
-    margin-left: 20px;
+.prof-icon {
+    width: 50px;
 }
 
 /* main */
