@@ -216,11 +216,13 @@ section {
 }
 
 .menu-list>li,
-.settings-list>li {
+.settings-list>li,
+.login {
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 0.5rem;
 }
 
 .logo {
