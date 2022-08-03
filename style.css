@@ -142,6 +142,7 @@ table {
     --accent-color: #c084fc;
     --search-color: #e9d5ff;
     --main-bg-color: #faf5ff;
+    --project-shadow: #c3a9d17b;
 
     --bright-text: #faf5ff;
     --heading-text: #5a3297;
@@ -322,9 +323,9 @@ main {
     margin-bottom: 10px;
 }
 
-.projects {
+/* .projects {
     overflow: auto;
-}
+} */
 
 .project {
     display: grid;
@@ -344,14 +345,16 @@ main {
 .item img {
     justify-self: center;
     width: 95%;
-    box-shadow: 1px 2px 5px 2px #c3a9d17b;
+    box-shadow: 1px 2px 5px 2px var(--project-shadow);
     border-radius: 10px;
 }
 
 .item .project-icons {
     justify-self: end;
+    color: var(--heading-text);
 }
 
+.item h3,
 .project-icons svg {
     margin-left: 0.5rem;
 }
