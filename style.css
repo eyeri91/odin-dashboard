@@ -338,9 +338,18 @@ main {
 }
 
 .project .item {
+    /* border-radius: 10px; */
     display: grid;
     grid: 1fr 3fr;
-    gap: 0.7rem;
+    /* gap: 0.7rem; */
+    /* background-color: var(--search-color); */
+}
+
+.item h3 {
+    justify-self: start;
+    background-color: var(--search-color);
+    padding: 10px 25px;
+    border-radius: 10px 10px 0 0;
 }
 
 .item img {
@@ -348,7 +357,7 @@ main {
     border-right: 4px solid var(--accent-color);
     width: 95%;
     box-shadow: 20px 20px 10px 2px var(--project-shadow);
-    border-radius: 10px;
+    border-radius: 0 10px 10px 10px;
 }
 
 .item .project-icons {
