@@ -386,24 +386,17 @@ main {
 
 
 .trend,
-.announcement {
+.articles {
     border: 1px solid var(--project-shadow);
     border-radius: 10px;
 }
 
 .trend,
-.announcement {
+.articles {
     height: auto;
 }
 
-.announcement {
-    display: grid;
-    grid: 1fr 3fr;
-    padding: 15px 10px;
-    background-color: var(--body-bg-color);
-    gap: 10px;
-}
-
+.articles,
 .trend {
     display: grid;
     grid: 2fr 4fr;
@@ -412,20 +405,26 @@ main {
     gap: 10px;
 }
 
-.announcement p,
+.article,
 .message {
     border-bottom: 1px solid var(--project-shadow);
     padding-bottom: 10px;
 }
 
-.announcement p:last-child,
+.article:last-child,
 .message:last-child {
     border: none;
     padding-bottom: 0px;
 }
 
+.article,
 .message {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    gap: 20px;
+}
+
+.article img,
+.message img {
+    width: 48px;
 }
