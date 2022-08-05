@@ -312,10 +312,19 @@ main {
 .contents-container {
     margin: 15px;
     height: 90%;
-    display: grid;
+    display: flex;
+    gap: 30px;
+    /* display: grid;
     grid-template-columns: 2.5fr 1fr;
     grid-template-rows: auto;
-    gap: 30px;
+    gap: 30px; */
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+}
+
+@media screen and (orientation: portrait) {
+    .contents-container {
+        flex-direction: column;
+    }
 }
 
 .contents-container h2 {
@@ -379,6 +388,7 @@ main {
 
 .info {
     /* overflow: auto; */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
