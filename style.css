@@ -299,8 +299,18 @@ header {
     margin-left: 40px;
 }
 
-.prof-icon {
+.account-icon {
     width: 50px;
+}
+
+.account-text {
+    text-decoration: none;
+}
+
+.account-text:active,
+.account-text:hover {
+    color: var(--heading-text);
+    text-decoration: underline;
 }
 
 /* main */
@@ -399,6 +409,7 @@ main {
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
+    /* align-items: stretch; */
 }
 
 
