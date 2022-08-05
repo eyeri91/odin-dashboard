@@ -143,9 +143,11 @@ table {
     --search-color: #e9d5ff;
     --main-bg-color: #faf5ff;
     --project-shadow: #c3a9d17b;
+    --icons-color: #8d69d4;
 
     --bright-text: #faf5ff;
-    --heading-text: #5a3297;
+    --heading-text: rgb(119, 73, 187);
+    --item-head-text: #8d69d4;
     --main-font: 'Roboto', sans-serif;
 
     --shadow: 0 6px 10px -4px rgba(199, 183, 199, 0.7);
@@ -265,7 +267,7 @@ header {
 }
 
 
-.head-left {
+.head-search {
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -328,6 +330,11 @@ main {
 .contents-container h2 {
     font-size: 1.5rem;
     color: var(--heading-text);
+    background-color: var(--search-color);
+    padding: 5px;
+    padding-left: 10px;
+    border-right: 5px solid #c7bfce;
+    border-radius: 10px 0 0 10px;
     margin-bottom: 10px;
 }
 
@@ -335,16 +342,17 @@ main {
 
 .project {
     display: grid;
-    /* resize: both; */
-    /* overflow: auto; */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: auto;
     gap: 30px;
 }
 
-.projects h2,
-.info h2 {
+.projects h2 {
     margin: 10px 10px 20px;
+}
+
+.info h2 {
+    margin: 10px 0px 20px;
 }
 
 .project .item {
@@ -353,6 +361,7 @@ main {
 }
 
 .item h3 {
+    color: var(--item-head-text);
     justify-self: start;
     background-color: var(--search-color);
     padding: 10px 25px;
@@ -369,7 +378,7 @@ main {
 
 .item .project-icons {
     justify-self: end;
-    color: var(--heading-text);
+    color: var(--icons-color);
     margin-top: 0.5rem;
 }
 
