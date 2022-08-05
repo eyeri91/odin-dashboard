@@ -200,8 +200,6 @@ section {
 
 
 .side-container {
-    /* border: 1px solid brown; */
-
     height: 90vh;
     margin: 20px;
     display: grid;
@@ -212,9 +210,7 @@ section {
         "menu"
         "settings"
         "login";
-
     align-items: center;
-    /* gap: 1rem; */
 }
 
 .menu-list>li,
@@ -280,6 +276,7 @@ header {
 
 
 .search-bar {
+    border: none;
     flex-grow: 1;
     color: var(--bright-text);
     margin-left: 20px;
@@ -287,6 +284,7 @@ header {
     padding: 5px 10px;
     background-color: var(--search-color);
 }
+
 
 .head-icons {
     /* border: 1px solid brown; */
