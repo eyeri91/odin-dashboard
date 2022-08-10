@@ -1,0 +1,7 @@
+1.profile 
+- flaticon
+-prefik: from Job Resume pack 
+
+2.the rest is from Material Design Icons.
+
+
