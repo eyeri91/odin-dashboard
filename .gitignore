@@ -3,3 +3,6 @@
 # images
 
 /images
+
+.DS_Store
+license.txt
