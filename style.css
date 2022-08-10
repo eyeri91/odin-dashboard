@@ -276,6 +276,10 @@ header {
     max-width: 500px;
 }
 
+.search-btn:active,
+.search-btn:hover {
+    color: var(--search-color);
+}
 
 .search-bar {
     border: none;
@@ -304,13 +308,13 @@ header {
 }
 
 .account-text {
+    color: var(--)var(--heading-text);
     text-decoration: none;
 }
 
 .account-text:active,
 .account-text:hover {
-    color: var(--heading-text);
-    text-decoration: underline;
+    color: var(--search-color);
 }
 
 /* main */
